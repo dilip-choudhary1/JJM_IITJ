@@ -200,17 +200,44 @@
             <div class="pe-md-5 mt-4 mt-md-0">
               <div class="post-meta mt-4">Mission</div>
               <h2 class="mb-4 display-4">Mission</h2>
-              <p><b>Smart Water Supply Grid:</b> Develop an intelligent water supply system using sensors, meters, and IoT technology to monitor and manage water resources efficiently.</p>
-              <p><b>Clean Air and Emission Management:</b> Collaborate with local authorities to assess air quality, emissions, and carrying capacity in urban areas, especially Kota city, for better environmental management.</p>
-              <p><b>Hazardous Waste Management:</b> Verify and ensure compliance of hazardous waste generation and management practices through annual inventory checks, promoting adherence to regulatory guidelines.</p>
-              <p><b>Circular Economy in Wastewater Treatment:</b> Transform the conventional wastewater treatment process into a circular economy model, emphasizing resource efficiency, waste reduction, and recycling of treated wastewater.</p>
-              <p><b>Algae-based Carbon Capture:</b> Investigate the potential of using algae to capture carbon dioxide from exhaust flue gases, contributing to carbon capture and sustainable environmental practices.</p>
-              <p><b>Community Empowerment:</b> Develop and implement decentralized clean water solutions, such as clay ceramic filters and advanced membrane-based systems, in rural and remote areas to provide safe drinking water and empower communities.</p>
-              <p><b>Collaboration and Research:</b> Forge collaborations with academic institutions, industries, government bodies, and international partners to conduct research, share ideas, and develop innovative solutions for various environmental challenges.</p>
-              <p><b>Technology Consulting:</b> Provide expertise to improve sewage treatment plants' efficiency, ensure quality effluent, and enhance environmental conditions in local areas.</p>
+              <p class="mission-paragraph"><b>Smart Water Supply Grid:</b> Develop an intelligent water supply system using sensors, meters, and IoT technology to monitor and manage water resources efficiently.</p>
+              <p class="mission-paragraph"><b>Clean Air and Emission Management:</b> Collaborate with local authorities to assess air quality, emissions, and carrying capacity in urban areas, especially Kota city, for better environmental management.</p>
+              <p class="mission-paragraph"><b>Hazardous Waste Management:</b> Verify and ensure compliance of hazardous waste generation and management practices through annual inventory checks, promoting adherence to regulatory guidelines.</p>
+              <p class="mission-paragraph"><b>Circular Economy in Wastewater Treatment:</b> Transform the conventional wastewater treatment process into a circular economy model, emphasizing resource efficiency, waste reduction, and recycling of treated wastewater.</p>
+              <p class="mission-paragraph"><b>Algae-based Carbon Capture:</b> Investigate the potential of using algae to capture carbon dioxide from exhaust flue gases, contributing to carbon capture and sustainable environmental practices.</p>
+              <p class="mission-paragraph"><b>Community Empowerment:</b> Develop and implement decentralized clean water solutions, such as clay ceramic filters and advanced membrane-based systems, in rural and remote areas to provide safe drinking water and empower communities.</p>
+              <p class="mission-paragraph"><b>Collaboration and Research:</b> Forge collaborations with academic institutions, industries, government bodies, and international partners to conduct research, share ideas, and develop innovative solutions for various environmental challenges.</p>
+              <p class="mission-paragraph"><b>Technology Consulting:</b> Provide expertise to improve sewage treatment plants' efficiency, ensure quality effluent, and enhance environmental conditions in local areas.</p>
             </div>
           </div>
-
+          
+          <style>
+            .mission-paragraph {
+              opacity: 0;
+              transform: translateY(20px);
+              transition: opacity 1s, transform 1s;
+            }
+          
+            .mission-paragraph.show {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          </style>
+          
+          <script>
+            const missionParagraphs = document.querySelectorAll(".mission-paragraph");
+            let currentIndex = 0;
+            function showNextParagraph() {
+              if (currentIndex < missionParagraphs.length) {
+                missionParagraphs[currentIndex].classList.add("show");
+                currentIndex++;
+              }
+            }
+            document.addEventListener("DOMContentLoaded", () => {
+              showNextParagraph();
+              setInterval(showNextParagraph, 3000);
+            });
+          </script>
         </div>
 
       </div>
