@@ -167,73 +167,59 @@
   </header><!-- End Header -->
 
   <main id="main">
-    <section>
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-12 text-center mb-5">
-            <h1 class="page-title">About us</h1>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-
-          <div class="d-md-flex post-entry-2 half">
-            <a href="#" class="me-4 thumbnail">
-              <img src="images/DSC_0244.JPG" alt="" class="img-fluid">
-            </a>
-            <div class="ps-md-5 mt-4 mt-md-0">
-              <div class="post-meta mt-4">About us</div>
-              <h2 class="mb-4 display-4">Vision</h2>
-              <p>The vision of the project is to establish a 'Demonstration Centre for Smart Graded-Water Supply Grid' utilizing IoT technology, sensors, and smart meters to create an intelligent water supply system at IIT Jodhpur campus.</p>
-              <p>This aims to optimize water usage, maintain water quality, and enhance distribution efficiency through intelligent automation and predictive modeling.</p>
+    <section class="about-section">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h1 class="page-title">About Us</h1>
+                    <p>Jal Jeevan Mission and Department of Drinking Water and Sanitation (DDWS) have established the JJM Professor Chair in IIT Jodhpur as the "Centre for Sustainable Drinking Water Sources" to undertake research and innovation in the rural water supply and sanitation sector. IITJ-JJM Water Centre is established to carry out high-quality empirical and applied research in the rural drinking water and sanitation sector to address sectoral challenges and facilitate the achievement of 'Har Ghar Jal' and 'ODF Plus' in rural India.</p>
+                </div>
             </div>
-          </div>
 
-          <div class="d-md-flex post-entry-2 half mt-5">
-            <a href="#" class="me-4 thumbnail order-2">
-              <img src="images/DSC_0242.JPG" alt="" class="img-fluid">
-            </a>
-            <div class="pe-md-5 mt-4 mt-md-0">
-              <div class="post-meta mt-4">Mission</div>
-              <h2 class="mb-4 display-4">Mission</h2>
-              <p class="mission-paragraph"><b>Smart Water Supply Grid:</b> Develop an intelligent water supply system using sensors, meters, and IoT technology to monitor and manage water resources efficiently.</p>
-              <p class="mission-paragraph"><b>Clean Air and Emission Management:</b> Collaborate with local authorities to assess air quality, emissions, and carrying capacity in urban areas, especially Kota city, for better environmental management.</p>
+            <div class="row mb-5">
+                <div class="d-md-flex post-entry-2 half">
+                    <a href="#" class="me-4 thumbnail">
+                        <img src="images/DSC_0244.JPG" alt="" class="img-fluid">
+                    </a>
+                    <div class="ps-md-5 mt-4 mt-md-0">
+                        <div class="post-meta mt-4">About Us</div>
+                        <h2 class="mb-4 display-4">Vision</h2>
+                        <p>IITJ-JJM Water Centre has a vision which is CORE, meaning Capacity Building, Outreach, Research, Education.</p>
+                        <ul class="vision-list">
+                            <li><strong>Capacity Building & Training Program:</strong>
+                                <ul>
+                                    <li>Design and execute capacity building programs.</li>
+                                    <li>Strengthen the role of academic institutions in public policy making in the sector.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Outreach:</strong>
+                                <ul>
+                                    <li>Undertake evaluation and assessment studies of government programs/interventions and coordinate with State and District Water and Sanitation Mission.</li>
+                                    <li>Provide a forum for inter-university/post-graduate and research-level dialogues, discussion meetings, summer/winter institutes involving other universities/autonomous institutes/PG Centers.</li>
+                                    <li>Disseminate research findings through seminars, conferences, trainings, and workshops.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Research:</strong>
+                                <ul>
+                                    <li>Undertake high-quality research in the focus area.</li>
+                                    <li>Develop evidence-based inputs and advice on any policy or technology matter as required by NJJM from time to time.</li>
+                                    <li>Develop concept notes, white papers, and undertake other activities in support of its function as a think tank in the rural water supply sector.</li>
+                                    <li>Provide opinions on R&D proposals, review papers, reports, documents.</li>
+                                    <li>Analyze and disseminate the current body of knowledge in the selected focus area.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Education:</strong>
+                                <ul>
+                                    <li>Conduct a PhD program and related coursework under the chair.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <style>
-            .mission-paragraph {
-              opacity: 0;
-              transform: translateY(20px);
-              transition: opacity 1s, transform 1s;
-            }
-          
-            .mission-paragraph.show {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          </style>
-          
-          <script>
-            const missionParagraphs = document.querySelectorAll(".mission-paragraph");
-            let currentIndex = 0;
-            function showNextParagraph() {
-              if (currentIndex < missionParagraphs.length) {
-                missionParagraphs[currentIndex].classList.add("show");
-                currentIndex++;
-              }
-            }
-            document.addEventListener("DOMContentLoaded", () => {
-              showNextParagraph();
-              setInterval(showNextParagraph, 3000);
-            });
-          </script>
         </div>
-
-      </div>
     </section>
-    
-  </main><!-- End #main -->
+</main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
