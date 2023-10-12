@@ -24,9 +24,59 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-
+  
+  
   <style>
-    /* Add your custom CSS styles here */
+    #check {
+      display: none;
+    }
+  
+    .checkbtn {
+      font-size: 30px;
+      color: #333;
+      float: right;
+      line-height: 80px;
+      margin-right: 30px;
+      cursor: pointer;
+      display: none;
+    }
+  
+    @media (max-width: 992px) {
+      .checkbtn {
+        display: block;
+      }
+  
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+      }
+  
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+  
+      nav ul li a {
+        font-size: 20px;
+      }
+  
+      a:hover,
+      a.active {
+        background: none;
+        color: #ff6600;
+      }
+  
+      #check:checked~ul {
+        left: 0;
+      }
+    }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -116,8 +166,11 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <nav id="navbar" class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
         <ul>
-          
           <li>
             <a href="index.html" class="logo d-flex align-items-center">
               <img src="images/IITJ Logo.jpg" alt="Logo">
@@ -132,15 +185,17 @@
           <li><a href="event1.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Service</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-         
-          <!-- <li><a href="single-post.html">Contact</a></li> -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Service</span>
+              <i class="bi bi-chevron-down dropdown-indicator"></i>
+            </a>
             <ul>
               <li><a href="water_solution.html">Total Water Solution A1</a></li>
               <li><a href="water_solution_A2.html">Total Water Solution A2</a></li>
             </ul>
           </li>
-        </ul>
+        </ul>        
       </nav><!-- .navbar -->
 
       <div class="position-relative">
